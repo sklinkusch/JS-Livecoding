@@ -17,7 +17,10 @@ let jobs = [
   "Pimp",
   "President",
   "Farmer",
-  "Pope"
+  "Pope",
+  "CEO",
+  "Clown",
+  "Bank robber"
 ];
 let geolocs = [
   "North Korea",
