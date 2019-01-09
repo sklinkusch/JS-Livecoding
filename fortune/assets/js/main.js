@@ -43,18 +43,22 @@ let partners = [
   "your job"
 ];
 
-let jobnr = Math.floor(jobs.length * Math.random());
-let geonr = Math.floor(geolocs.length * Math.random());
-let partnr = Math.floor(partners.length * Math.random());
-let childnr = Math.floor(20 * Math.random());
-let areanr = Math.floor(1000 * Math.random());
+while (true) {
+  let jobnr = Math.floor(jobs.length * Math.random());
+  let geonr = Math.floor(geolocs.length * Math.random());
+  let partnr = Math.floor(partners.length * Math.random());
+  let childnr = Math.floor(20 * Math.random());
+  let areanr = Math.floor(1000 * Math.random());
 
-// Prompt
-/*let userJob = prompt("Desired Job?", "Doctor");
+  // Prompt
+  /*let userJob = prompt("Desired Job?", "Doctor");
 let userLoc = prompt("Where?", "Aerospace");
 let userPart = prompt("Partner?", "anyone");
 let userChild = prompt("Number of Children", 0);
 let userArea = prompt("Size of House", 40);
 // Console log user input
 console.log(fortune(userChild, userPart, userLoc, userJob, userArea));*/
-alert(fortune(childnr, partners[partnr], geolocs[geonr], jobs[jobnr], areanr));
+  alert(
+    fortune(childnr, partners[partnr], geolocs[geonr], jobs[jobnr], areanr)
+  );
+}
