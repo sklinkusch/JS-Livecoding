@@ -5,7 +5,9 @@ const fortune = (
   job = "worker",
   area = 1
 ) => {
-  return `You will be a ${job} in ${loc}, married to ${partn} with ${numch} kids living in a house of ${area} square meters.`;
+  let child =
+    numch === 0 ? "no kids" : numch === 1 ? `${numch} kid` : `${numch} kids`;
+  return `You will be a ${job} in ${loc}, married to ${partn} with ${child} living in a house of ${area} square meters.`;
 };
 
 let jobs = [
