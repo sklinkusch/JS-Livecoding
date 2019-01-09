@@ -10,6 +10,7 @@ const fortune = (
   return `You will be a ${job} in ${loc}, married to ${partn} with ${child} living in a house of ${area} square meters.`;
 };
 
+const randomize = MyArray => Math.floor(Math.random() * MyArray.length);
 let jobs = [
   "Doctor",
   "Drug dealer",
@@ -48,9 +49,9 @@ let partners = [
   "your job"
 ];
 
-let jobnr = Math.floor(jobs.length * Math.random());
-let geonr = Math.floor(geolocs.length * Math.random());
-let partnr = Math.floor(partners.length * Math.random());
+let jobnr = randomize(jobs);
+let geonr = randomize(geolocs);
+let partnr = randomize(partners);
 let childnr = Math.floor(20 * Math.random());
 let areanr = Math.floor(1000 * Math.random());
 
