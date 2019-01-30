@@ -1,0 +1,12 @@
+.float-right {
+  float: right;
+}
+
+span {
+  padding: 0 1rem;
+  background: #c0c0c0;
+}
+
+li:hover {
+  background: #efefef;
+}

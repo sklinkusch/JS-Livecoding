@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Events on parents</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <ul>
+      <li data-image="image-1">
+        Item 1
+        <span class="float-right remove-image"
+          ><strong>remove image</strong></span
+        >
+        <span class="float-right delete"><strong>X</strong></span>
+        <span class="float-right edit"><strong>edit</strong></span>
+      </li>
+      <li>
+        Item 2 <span class="float-right delete"><strong>X</strong></span>
+        <span class="float-right edit"><strong>edit</strong></span>
+      </li>
+      <li>
+        Item 3 <span class="float-right delete"><strong>X</strong></span>
+        <span class="float-right edit"><strong>edit</strong></span>
+      </li>
+    </ul>
+
+    <img
+      id="image-1"
+      src="https://picsum.photos/200/300"
+      width="200"
+      height="300"
+    />
+    <script src="./main.js"></script>
+  </body>
+</html>
