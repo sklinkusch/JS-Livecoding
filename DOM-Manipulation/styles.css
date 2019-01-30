@@ -1,0 +1,23 @@
+body {
+  background-color: #efefef;
+  margin: 1rem 0;
+}
+
+h1 span {
+  color: #4682B4;
+}
+
+p span {
+  color: #96b38a;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.reset-todo-form {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Manipulation</title>
+        <link type="text/css" rel="stylesheet" href="./styles.css""></link>
+</head>
+<body>
+	<div class="container">
+  <h1>
+    <span>ES6</span>
+    DOM Manipulation
+  </h1>
+  
+  <section>
+    <h3>A list of people</h3>
+
+    <ul id="people">
+      <li>Dane Gaynor</li>
+      <li>Jasmin Kenneth</li>
+      <li>Robert Daryl</li>
+    </ul>
+  </section>
+    
+  <section>
+    <h3>A simple ToDo list</h3>
+
+    <div class="card p-4">
+      <form class="smart-form" id="todo-list-form">
+        <h4>Add an item</h4>
+
+        <div class="input-group mb-3">
+          <input class="form-control" id="todo-text" type="text" />
+          <div class="input-group-append">
+            <button id="todo-button" class="btn btn-success" type="submit">Add</button>
+          </div>
+        </div>
+      </form>
+      
+      <h4>Items</h4>
+      
+      <ul id="todo-list-items" class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Learning JavaScript basics (variables, types, functions, ...)
+          <button class="btn btn-remove btn-secondary btn-sm">x</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Extending the portfolio website using JavaScript
+          <button class="btn btn-remove btn-secondary btn-sm">x</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Learning React &amp; Redux
+          <button class="btn btn-remove btn-secondary btn-sm">x</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Learning WebPack
+          <button class="btn btn-remove btn-secondary btn-sm">x</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+   <script src="./main.js"></script>
+</body>
+</html>
